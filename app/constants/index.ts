@@ -1,4 +1,4 @@
-import type { AxisModel } from "@syncfusion/ej2-react-charts";
+// import type { AxisModel } from "@syncfusion/ej2-react-charts";
 
 export const sidebarItems = [
   {
@@ -11,7 +11,7 @@ export const sidebarItems = [
     id: 3,
     icon: "/assets/icons/users.svg",
     label: "All Users",
-    href: "/all-users",
+    href: "/users",
   },
   {
     id: 4,
