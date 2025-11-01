@@ -6,7 +6,7 @@ import MobileSidebar from "../../../components/MobileSidebar";
 
 const AdminLayout = () => {
     return (
-        <div className="admin-layout h-full fixed">
+        <div className="admin-layout h-full ">
             <MobileSidebar />
 
             <aside className="w-full max-w-[270px] h-auto hidden bg-[#FFB800] lg:block">
