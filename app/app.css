@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-/*@import "../node_modules/@syncfusion/ej2-base/styles/material.css";*/
-/*@import "../node_modules/@syncfusion/ej2-react-buttons/styles/material.css";*/
-/*@import "../node_modules/@syncfusion/ej2-react-grids/styles/material.css";*/
-/*@import "../node_modules/@syncfusion/ej2-react-navigations/styles/material.css";*/
-/*@import "../node_modules/@syncfusion/ej2-react-splitbuttons/styles/material.css";*/
-/*@import "../node_modules/@syncfusion/ej2-react-dropdowns/styles/material.css";*/
+
 @import "tailwindcss";
 @import "tw-animate-css";
 /*---break---*/
@@ -41,7 +36,7 @@
   --color-red-50: #fff4ed;
   --color-red-100: #ff543d;
 
-  --background-image-auth: url("public/assets/images/auth-img.webp");
+  /*--background-image-auth: url("public/assets/images/auth-img.webp");*/
   --background-image-hero: url("public/assets/images/hero-img.png");
   --background-image-card-1: url("public/assets/images/card-img-1.png");
   --background-image-card-2: url("public/assets/images/card-img-2.png");
@@ -113,7 +108,7 @@
     }
   }
   .auth {
-    @apply w-full h-screen flex bg-auth bg-cover bg-no-repeat;
+    @apply w-full h-screen flex bg-blue-500 bg-cover bg-no-repeat;
   }
 
   .payment-success {

@@ -103,26 +103,26 @@ export const comboBoxItems = {
   budget: budgetOptions,
 } as Record<keyof TripFormData, string[]>;
 
-export const userXAxis: AxisModel = { valueType: "Category", title: "Day" };
-export const useryAxis: AxisModel = {
-  minimum: 0,
-  maximum: 10,
-  interval: 2,
-  title: "Count",
-};
-
-export const tripXAxis: AxisModel = {
-  valueType: "Category",
-  title: "Travel Styles",
-  majorGridLines: { width: 0 },
-};
-
-export const tripyAxis: AxisModel = {
-  minimum: 0,
-  maximum: 10,
-  interval: 2,
-  title: "Count",
-};
+// export const userXAxis: AxisModel = { valueType: "Category", title: "Day" };
+// export const useryAxis: AxisModel = {
+//   minimum: 0,
+//   maximum: 10,
+//   interval: 2,
+//   title: "Count",
+// };
+//
+// export const tripXAxis: AxisModel = {
+//   valueType: "Category",
+//   title: "Travel Styles",
+//   majorGridLines: { width: 0 },
+// };
+//
+// export const tripyAxis: AxisModel = {
+//   minimum: 0,
+//   maximum: 10,
+//   interval: 2,
+//   title: "Count",
+// };
 
 export const CONFETTI_SETTINGS = {
   particleCount: 200, // Number of confetti pieces
@@ -212,7 +212,7 @@ export const users = [
         imageUrl: "/assets/images/david.webp",
         dateJoined: formatDate("2025-01-01"),
         itineraryCreated: 10,
-        status: "user",
+        status: "Admin",
     },
     {
         id: 2,
@@ -225,11 +225,65 @@ export const users = [
     },
     {
         id: 3,
-        name: "John Smith",
-        email: "john.smith@example.com",
+        name: "John Will",
+        email: "john.will@example.com",
         imageUrl: "/assets/images/david.webp",
         dateJoined: formatDate("2025-01-03"),
         itineraryCreated: 8,
-        status: "admin",
+        status: "user",
+    },
+    {
+        id: 4,
+        name: "John walt",
+        email: "john.walt@example.com",
+        imageUrl: "/assets/images/david.webp",
+        dateJoined: formatDate("2025-01-03"),
+        itineraryCreated: 8,
+        status: "user",
+    },
+    {
+        id: 5,
+        name: "Sharp Array",
+        email: "sharp.array@example.com",
+        imageUrl: "/assets/images/david.webp",
+        dateJoined: formatDate("2025-01-03"),
+        itineraryCreated: 8,
+        status: "Admin",
+    },
+    {
+        id: 6,
+        name: "John Castle",
+        email: "john.castle@example.com",
+        imageUrl: "/assets/images/david.webp",
+        dateJoined: formatDate("2025-01-03"),
+        itineraryCreated: 8,
+        status: "user",
+    },
+    {
+        id: 7,
+        name: "John scote",
+        email: "john.scote@example.com",
+        imageUrl: "/assets/images/david.webp",
+        dateJoined: formatDate("2025-01-03"),
+        itineraryCreated: 8,
+        status: "user",
+    },
+    {
+        id: 8,
+        name: "John ropier",
+        email: "john.ropier@example.com",
+        imageUrl: "/assets/images/david.webp",
+        dateJoined: formatDate("2025-01-03"),
+        itineraryCreated: 8,
+        status: "user",
+    },
+    {
+        id: 9,
+        name: "John jackson",
+        email: "john.jackson@example.com",
+        imageUrl: "/assets/images/david.webp",
+        dateJoined: formatDate("2025-01-03"),
+        itineraryCreated: 8,
+        status: "user",
     },
 ];

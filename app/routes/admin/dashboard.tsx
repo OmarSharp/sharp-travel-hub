@@ -1,20 +1,24 @@
-import React from 'react';
-import {Header, StatusCard, TripsCard} from "../../../components";
+
 import {dashboardStats, user, allTrips} from "~/constants";
+import {getUser} from "~/appwrite/auth";
+import type {Route} from "../../../.react-router/types/app/routes/admin/+types/dashboard";
+import Header from "../../../components/Header";
+import StatusCard from "../../../components/StatusCard";
+import TripsCard from "../../../components/TripsCard";
 
-const Dashboard = () => {
+export const clientLoader = async () => await getUser();
 
+const Dashboard = ({loaderData}: Route.ComponentProps) => {
 
+    const user = loaderData as User | null;
 
     const {totalUsers, usersJoined,
         totalTrips, tripsCreated, userRole} = dashboardStats;
 
-
-
     return (
         <main className="dashboard wrapper">
             <Header
-                title={`Hi ${user.name ?? 'Guest'} ?!!`}
+                title={`Hi ${user?.name ?? 'Guest'} ?!!`}
                 desc="Track Your App in Real Time"
             />
 
