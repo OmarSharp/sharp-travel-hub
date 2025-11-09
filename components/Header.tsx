@@ -1,12 +1,14 @@
 import {cn} from "~/lib/utils";
-import {useLocation} from "react-router";
+import {Link, useLocation} from "react-router";
 
 interface Props {
     title: string;
     desc: string;
+    ctaText?: string;
+    ctaUrl?: string;
 }
 
-const Header = ({title, desc} :Props) => {
+const Header = ({title, desc, ctaText, ctaUrl} :Props) => {
      const location = useLocation();
 
     return (
@@ -21,6 +23,15 @@ const Header = ({title, desc} :Props) => {
                         'text-xl md: text-xl' :
                         'text-xl md:text-xl font-semibold' )}>{desc}</p>
             </article>
+
+            {ctaText && ctaUrl && (
+                <Link to={ctaUrl}>
+                    <button type="button" className="button-class !h-10 !w-full md:w-[250px] cursor-pointer animate-pulse">
+                        <img src="/assets/icons/plus.svg" alt="plus" className="size-5" />
+                        <span className="p-16-semibold text-white">{ctaText}</span>
+                    </button>
+                </Link>
+            )}
         </header>
     );
 };

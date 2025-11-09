@@ -128,7 +128,7 @@
   }
 
   .trip-form {
-    @apply flex flex-col gap-6 py-6 bg-white border border-light-200 rounded-xl shadow-100;
+    @apply flex flex-col gap-6 py-6 bg-white border border-light-200 rounded-xl shadow-100 w-4xl;
     div {
       @apply w-full flex flex-col gap-2.5 px-6 relative;
     }
@@ -436,7 +436,7 @@
     @apply text-sm md:text-base font-semibold;
   }
   .button-class {
-    @apply !bg-primary-100 !px-4 !rounded-lg !flex !items-center !justify-center !gap-1.5 !shadow-none;
+    @apply !bg-primary-100 !px-6 !rounded-lg !flex !items-center !justify-center !gap-1 !shadow-none;
   }
   .button-class-secondary {
     @apply !bg-white !px-4 !rounded-lg !flex !items-center !justify-center !gap-1.5 !shadow-sm;
